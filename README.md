@@ -6,32 +6,28 @@ We have very precise rules over how our git commit messages can be formatted. Th
 
 **Example:**
 ```
-WIP:FIX[consultation{#12}]>Add hat wobble
-^-^ ^-^ ^----------^ ^-^   ^-------------^
- |   |   |           |     |
- |   |   |           |     +--> (Capitalised) In nutshell description in present tense.
- |   |   |           |
- |   |   |           +--> (#number,Optinal) Task or Issue id 
- |   |   |
- |   |   +--> (lowercase) Scope  OR Issue ID in case of FIX.
+wip[consultation#12] Add hat wobble
+^-^ ^---------^  ^-^   ^-------------^
+ |   |            |          |
+ |   |            |          +--> (lowercase) Summary.
+ |   |            |           
+ |   |            |           
+ |   |            |
+ |   |            +--> Issue ID.
  |   |
- |   +--> (UPPERCASE) Type: FEAT, FIX, DOCS, REVERT, REFACTOR, STYLE or TEST. 
+ |   +--> (lowercase) Scope
  |
- +--> (UPPERCASE) State: INIT, WIP, DONE.
+ +--> (lowercase) State: feat, fix, doc..
 ```
 
 ### Type
-- **Feat:** Feat in a new feature ( with WIP in cace)
-- **Fix:** A bug fix
-- **Docs:** Documentation only changes
-- **Refactor:** A code change that neither fixes a bug nor adds a feature
-- **Style:** Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)
-- **Test:** Adding missing tests or correcting existing tests
-
-### State
-- **INIT:** Init a new feature
-- **WIP:**  Work In Progress
-- **WID:**  Work Is Done
+- **feat:** Feat in a new feature ( with WIP in cace)
+- **wip:**  Work In Progress 
+- **fix:** A bug fix
+- **doc:** Documentation only changes
+- **refactor:** A code change that neither fixes a bug nor adds a feature
+- **style:** Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)
+- **test:** Adding missing tests or correcting existing tests
 
 ### Scope
 The scope could be anything specifying place of the commit change. For example: consultations, person/medical-history, etc.
